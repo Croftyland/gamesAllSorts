@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.around {
+    animation: rotator 2.4s linear infinite;
+}
+.root_first,
+.root_second,
+.root_third ,
+.root_forth ,
+.root_fifth  {
+     transform-origin: center;
+     animation: dash 3.4s ease-in-out infinite, colors 9.6s ease-in-out infinite;
+ }
+.root_first {
+    stroke-dasharray: 30;
+    stroke-dashoffset: 50;
+
+}
+.root_second {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 0;
+
+}
+.root_third {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50;
+
+}
+.root_forth {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 60;
+
+}
+.root_fifth {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 70;
+
+}
+@keyframes colors {
+    0% {
+        stroke: #4285f4;
+    }
+    25% {
+        stroke: #de3e35;
+    }
+    50% {
+        stroke: #f7c223;
+    }
+    75% {
+        stroke: #1b9a59;
+    }
+    100% {
+        stroke: #4285f4;
+    }
+}
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+    }
+
+}
+
